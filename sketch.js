@@ -4,6 +4,7 @@ var fedTime,lastFed,currentTime;
 var feed,addFood;
 var foodObj;
 var gameState,readState;
+var garden;
 
 function preload(){
 sadDog=loadImage("images/Dog.png");
@@ -44,6 +45,9 @@ function setup() {
   addFood=createButton("Add Food");
   addFood.position(800,95);
   addFood.mousePressed(addFoods);
+  
+  garden=createbutton("garden");
+  addFood.position(800,110);
 }
 
 function draw() {
